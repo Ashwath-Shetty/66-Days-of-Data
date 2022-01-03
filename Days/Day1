@@ -1,16 +1,25 @@
 Abhishek Thakur Book
 1. chapter 1: setting up your ML Environment.
 setting up the ML Environment using Anacond/miniconda in your system for the seemless development.
+https://github.com/abhishekkrthakur/approachingalmost/blob/master/environment.yml
+https://towardsdatascience.com/setup-an-environment-for-machine-learning-and-deep-learning-with-anaconda-in-windows-5d7134a3db10
 
 2. Chapter 2: Supervised and unsupervised ML.
 Supervised ML:
 what is supervised ML?
-Regression and Classification.
+data always has one or multiple targets associated with it
+
+Classification and Regression.
+Classification: predicting a category, e.g. dog or cat.
+Regression: predicting a value, e.g. house prices
+
 Unsupervised ML:
 what is unsupervised ML?
+Unsupervised datasets do not have a target associated with them
+
 types of techniques to use- clustering, PCA, t-SNE.
 
 things to work more on:
-types of techniques in detail.
-evaluation of unsupervised learning.
-semi supervised learning with an example.
+-types of unsupervised learning techniques in detail.
+-evaluation of unsupervised learning models.
+-semi supervised learning with an example.
