@@ -1,1 +1,16 @@
-will
+Abhishek Thakur Book
+1. chapter 1: setting up your ML Environment.
+setting up the ML Environment using Anacond/miniconda in your system for the seemless development.
+
+2. Chapter 2: Supervised and unsupervised ML.
+Supervised ML:
+what is supervised ML?
+Regression and Classification.
+Unsupervised ML:
+what is unsupervised ML?
+types of techniques to use- clustering, PCA, t-SNE.
+
+things to work more on:
+types of techniques in detail.
+evaluation of unsupervised learning.
+semi supervised learning with an example.
