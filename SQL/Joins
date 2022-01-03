@@ -1,0 +1,26 @@
+##The Report
+challenge link-> https://www.hackerrank.com/challenges/the-report/problem?isFullScreen=true
+select if(g.Grade<8,NULL,s.Name),g.grade,s.marks from grades as g join students as s where s.marks between g.min_mark and g.max_mark
+order by g.grade desc,s.Name asc,s.marks asc;
+or(alternate Query)
+SELECT 
+    CASE
+        WHEN Grades.Grade > 7
+        THEN Students.Name
+        WHEN Grades.Grade <= 7
+        THEN NULL
+    END, Grades.Grade, Students.Marks FROM Students INNER JOIN Grades ON Students.Marks BETWEEN Grades.Min_Mark AND Max_Mark ORDER BY Grades.Grade DESC, Students.Name ASC, Students.Marks ASC;
+
+1. IF Syntax-> w3 school
+IF(condition, value_if_true, value_if_false)
+2. Between Syntax->w3 school
+SELECT column_name(s)
+FROM table_name
+WHERE column_name BETWEEN value1 AND value2;
+3. Case Syntax-> w3 school
+CASE
+    WHEN condition1 THEN result1
+    WHEN condition2 THEN result2
+    WHEN conditionN THEN resultN
+    ELSE result
+END;
