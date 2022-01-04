@@ -1,0 +1,12 @@
+Kmeans Algorithm:
+Basics and mathematical intuition behind the kmeans.
+in-depth overview of Sklearns Kmeans library.
+
+Evaluation methods:
+1. Elbow method
+2. Silhouette analysis
+
+Articles to refer for the indepth explanation:
+https://towardsdatascience.com/k-means-clustering-algorithm-applications-evaluation-methods-and-drawbacks-aa03e644b48a
+https://www.analyticsvidhya.com/blog/2019/08/comprehensive-guide-k-means-clustering/#h2_9
+https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html
