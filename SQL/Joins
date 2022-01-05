@@ -24,3 +24,18 @@ CASE
     WHEN conditionN THEN resultN
     ELSE result
 END;
+
+##challenges
+https://www.hackerrank.com/challenges/challenges/problem?isFullScreen=true
+CTE(as and with)
+https://www.kaggle.com/dansbecker/as-with
+WITH time AS 
+                 (
+                     SELECT DATE(block_timestamp) AS trans_date
+                     FROM `bigquery-public-data.crypto_bitcoin.transactions`
+                 )
+                 SELECT COUNT(1) AS transactions,
+                        trans_date
+                 FROM time
+                 GROUP BY trans_date
+                 ORDER BY trans_date
