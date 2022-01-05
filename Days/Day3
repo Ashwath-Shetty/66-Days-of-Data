@@ -1,0 +1,9 @@
+1. silhouette analysis in detail->tds
+2. drawbacks of kmeans->tds
+3. evaluation metrics for kmeans->av
+-inertia
+-dunn index
+4. kmeans++ to choose initial cluster centroids->av
+5. key takeaway/ conclusion->tds
+tds->https://towardsdatascience.com/k-means-clustering-algorithm-applications-evaluation-methods-and-drawbacks-aa03e644b48a
+av-> https://www.analyticsvidhya.com/blog/2019/08/comprehensive-guide-k-means-clustering/#h2_1
