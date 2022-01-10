@@ -1,0 +1,5 @@
+1. some interesting thing about t-sne from distill.pub
+2. t-sne in practice using sklearn and important parameters like perplexity and n_iter overview or effect on t-sne.
+applied ai from lecture 25 to end in playlist thehttps://www.youtube.com/watch?v=PTNfRk0v6YM&list=PLupD_xFct8mHqCkuaXmeXhe0ajNDu0mhZ&index=5&ab_channel=AppliedAICourse
+t-sne article with cool visualization-> https://distill.pub/
+mnist example on t-sne-> https://colah.github.io/posts/2014-10-Visualizing-MNIST/
