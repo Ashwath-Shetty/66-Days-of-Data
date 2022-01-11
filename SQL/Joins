@@ -39,3 +39,16 @@ WITH time AS
                  FROM time
                  GROUP BY trans_date
                  ORDER BY trans_date
+                 
+                 
+ #placements
+ https://www.hackerrank.com/challenges/placements/problem?isFullScreen=true
+ Multiple joins
+ select s.name from 
+students as s join friends as f on s.id=f.id 
+join packages as p1 on p1.id=s.id
+join packages as p2 on f.friend_id=p2.id
+where p2.salary>p1.salary
+order by p2.salary;
+;
+https://www.sqlshack.com/learn-sql-join-multiple-tables/
