@@ -52,3 +52,8 @@ where p2.salary>p1.salary
 order by p2.salary;
 ;
 https://www.sqlshack.com/learn-sql-join-multiple-tables/
+
+#joins chapter from intermediate sql from dataquest
+SELECT c.*,f.name as country_name FROM facts f
+INNER JOIN cities c ON c.facts_id = f.id limit 5;
+it will print all the columns from c and name from f
