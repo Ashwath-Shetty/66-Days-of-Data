@@ -1,2 +1,12 @@
 1. dictionaries till 8th slide in python for data science fundamentals part2 from dataquest
+--->We can check if a certain value exists in the dictionary as a key using an in operator. An inexpression always returns a Boolean value.
+--->this will help to count the frequency.
+frequency_table = {}
+for row in a_data_set:    
+      a_data_point = row[5]    
+      if a_data_point in frequency_table:        
+            frequency_table[a_data_point] += 1    
+      else:        
+            frequency_table[a_data_point]
+
 2. google ml system design on recommendation system from data science jay https://www.youtube.com/watch?v=uF1V2MqX2U0&t=467s
