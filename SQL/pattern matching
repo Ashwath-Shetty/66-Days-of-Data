@@ -1,0 +1,3 @@
+##LIKE
+https://www.w3schools.com/sql/sql_like.asp
+WHERE [column_name] LIKE "[pattern]"
