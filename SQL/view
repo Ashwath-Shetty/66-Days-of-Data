@@ -1,0 +1,15 @@
+by using WITH we can cretae a temp table which can be used only inside that query. 
+but if we use view it will create a virtual table/db object which we can use in other queries as well.
+syntax:
+CREATE VIEW view_name AS
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition;
+
+example:
+-->CREATE VIEW [Brazil Customers] AS
+SELECT CustomerName, ContactName
+FROM Customers
+WHERE Country = 'Brazil';
+--> SELECT * FROM [Brazil Customers];
+
