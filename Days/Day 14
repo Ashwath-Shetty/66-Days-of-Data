@@ -1,0 +1,79 @@
+Series.map()
+Series.apply()
+DataFrame.applymap()
+DataFrame.apply()
+pd.melt()
+
+--> mapping = {'Economy (GDP per Capita)': 'Economy', 'Health (Life Expectancy)': 'Health', 'Trust (Government Corruption)': 'Trust' }
+happiness2015=happiness2015.rename(mapping,axis=1)
+
+--> map and apply
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.map.html
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.apply.html
+e.x 1:
+def label(element):
+    if element > 1:
+        return 'High'
+    else:
+        return 'Low'
+economy_impact_apply=happiness2015.Economy.apply(label)
+economy_impact_map=happiness2015.Economy.apply(label)
+equal=economy_impact_map.equals(economy_impact_apply)
+
+e.x 2:
+def label(element,x):
+    if element > x:
+        return 'High'
+    else:
+        return 'Low'
+economy_impact_apply = happiness2015['Economy'].apply(label,x=0.8)
+
+--> apply map method
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.applymap.html
+def label(element):
+    if element > 1:
+        return 'High'
+    else:
+        return 'Low'
+economy_apply = happiness2015['Economy'].apply(label)
+factors = ['Economy', 'Family', 'Health', 'Freedom', 'Trust', 'Generosity']
+factors_impact=happiness2015[factors].applymap(label)
+
+--> melt
+https://pandas.pydata.org/pandas-docs/version/0.22/generated/pandas.melt.html
+https://s3.amazonaws.com/dq-content/345/Melt_Syntax.svg
+https://www.jstatsoft.org/article/view/v059i10
+main_cols = ['Country', 'Region', 'Happiness Rank', 'Happiness Score']
+factors = ['Economy', 'Family', 'Health', 'Freedom', 'Trust', 'Generosity', 'Dystopia Residual']
+melt=pd.melt(happiness2015, id_vars=main_cols, value_vars=factors)
+melt['Percentage'] = round(melt['value']/melt['Happiness Score'] * 100, 2)
+
+--> pivot table, aggregation and visualization
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.pivot_table.html
+melt = pd.melt(happiness2015, id_vars = ['Country', 'Region', 'Happiness Rank', 'Happiness Score'], value_vars= ['Economy', 'Family', 'Health', 'Freedom', 'Trust', 'Generosity', 'Dystopia Residual'])
+melt['Percentage'] = round(melt['value']/melt['Happiness Score'] * 100, 2)
+pv_melt = melt.pivot_table(index='variable', values='value')
+pv_melt.plot(kind='pie', y='value', legend=False)
+
+
+In this lesson, we learned how to transform data using the Series.map(), Series.apply(), DataFrame.apply(), and DataFrame.applymap() methods along with the pd.melt() function. Below is a summary chart of the differences between the map(), apply(), and applymap() methods:
+
+Method
+Series or Dataframe Method	Applies Functions Element-wise?
+Map	Series	Yes
+Apply	Series	Yes
+Applymap	Dataframe	Yes
+Apply	Dataframe	No, applies functions along an axis
+As you explore pandas, you'll also find that pandas has a method to "un-melt" the data, or transform rows into columns. This method is called the df.pivot() method, not to be confused with the df.pivot_table() method used to aggregate data. Although we couldn't cover the df.pivot() method explicitly in this lesson, we encourage you to explore it on your own.
+
+In the next lesson, we'll learn how to manipulate strings in pandas as we continue building on what we've learned so far.
+
+APPLYING FUNCTIONS ELEMENT-WISEAPPLYING FUNCTIONS ALONG AN AXISRESHAPING DATAFRAMESConceptsResourcesTakeaways by Dataquest Labs, Inc. - All rights reserved © 2021Apply a function element-wise to a series:df[col_name].apply(function_name)df[col_name].map(function_name)•Apply a function element-wise to a dataframe:df.applymap(function_name)•Apply a function along an axis, column-wise:df.apply(function_name)•Reshape a dataframe:pd.melt(df, id_vars=[col1, col2], value_vars=[col3, col4])•The Series.apply() and Series.map() methods can be used to apply a function element-wiseto a series. The DataFrame.applymap() method can be used to apply a function element-wise toa dataframe.•The DataFrame.apply() method has different capabilities than the Series.apply() method.Instead of applying functions element-wise, the df.apply() method applies functions along anaxis, either column-wise or row-wise. When we create a function to use with df.apply(), we setit up to accept a Series, most commonly a column. •Use the apply() method when a vectorized function does not exist because a vectorizedfunction can perform an equivalent task faster than the apply() method. Sometimes, it may benecessary to reshape a dataframe to use a vectorized method.•Tidy Data•
+
+Download As PDF
+Page 1 of 1
+10. Takeaways
+Back
+10 / 10
+Finish
+
