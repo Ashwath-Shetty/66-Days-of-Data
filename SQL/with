@@ -1,0 +1,6 @@
+WITH
+    [alias_name] AS ([subquery]),
+    [alias_name_2] AS ([subquery_2]),
+    [alias_name_3] AS ([subquery_3])
+
+SELECT [main_query]
