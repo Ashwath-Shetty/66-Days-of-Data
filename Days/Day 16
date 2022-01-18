@@ -1,0 +1,5 @@
+Chapter 3 cross validation from abhishek thakur's book.
+https://neptune.ai/blog/cross-validation-in-machine-learning-how-to-do-it-right
+larger k will take lot of time to train so if dataset is large use small k,
+in deep learning use hold out based or train, valid, test approach coz it takes lots of time to train.
+always use stratified k fold for classification so that it will handle class imbalance
