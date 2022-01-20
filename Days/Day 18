@@ -1,0 +1,47 @@
+Abhishe thakur's book 4th chapter evaluation metrics
+read about accuracy, precision, recall.
+True positive (TP): Given an image, if your model predicts the image has 
+pneumothorax, and the actual target for that image has pneumothorax, it is 
+considered a true positive.
+True negative (TN): Given an image, if your model predicts that the image does not 
+have pneumothorax and the actual target says that it is a non-pneumothorax image, 
+it is considered a true negative.
+In simple words, if your model correctly predicts positive class, it is true positive, 
+and if your model accurately predicts negative class, it is a true negative.
+False positive (FP): Given an image, if your model predicts pneumothorax and the 
+actual target for that image is non- pneumothorax, it a false positive.
+
+False negative (FN): Given an image, if your model predicts non-pneumothorax 
+and the actual target for that image is pneumothorax, it is a false negative.
+In simple words, if your model incorrectly (or falsely) predicts positive class, it is 
+a false positive. If your model incorrectly (or falsely) predicts negative class, it is a 
+false negative
+
+Accuracy Score = (TP + TN) / (TP + TN + FP + FN)
+
+Precision = TP / (TP + FP)
+Let’s say we make a new model on the new skewed dataset and our model correctly 
+identified 80 non-pneumothorax out of 90 and 8 pneumothorax out of 10. Thus, we 
+identify 88 images out of 100 successfully. The accuracy is, therefore, 0.88 or 88%.
+
+But, out of these 100 samples, 10 non-pneumothorax images are misclassified as 
+having pneumothorax and 2 pneumothorax are misclassified as not having 
+pneumothorax.
+Thus, we have:
+- TP : 8
+- TN: 80
+- FP: 10
+- FN: 2
+So, our precision is 8 / (8 + 10) = 0.444. This means our model is correct 44.4% 
+times when it’s trying to identify positive samples (pneumothorax).
+
+But, out of these 100 samples, 10 non-pneumothorax images are misclassified as 
+having pneumothorax and 2 pneumothorax are misclassified as not having 
+pneumothorax.
+Thus, we have:
+- TP : 8
+- TN: 80
+- FP: 10
+- FN: 2
+So, our precision is 8 / (8 + 10) = 0.444. This means our model is correct 44.4% 
+times when it’s trying to identify positive samples (pneumothorax).
