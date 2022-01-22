@@ -1,0 +1,7 @@
+TPR or True Positive Rate, which is the same as recall.
+TPR or recall is also known as sensitivity.
+TPR = TP / (TP + FN)
+
+TPR or True Positive Rate, which is the same as recall.
+TPR = TP / (TP + FN )
+And 1 - FPR is known as specificity or True Negative Rate or TNR
