@@ -1,0 +1,19 @@
+log loss
+Log Loss = - 1.0 * ( target * log(prediction) + (1 - target) * log(1 - prediction))
+For multiple samples in the dataset, the log-loss over all samples is a mere average 
+of all individual log losses. One thing to remember is that log loss penalizes quite 
+high for an incorrect or a far-off prediction, i.e. log loss punishes you for being very 
+sure and very wrong
+
+For multiple samples in the dataset, the log-loss over all samples is a mere average 
+of all individual log losses. One thing to remember is that log loss penalizes quite 
+high for an incorrect or a far-off prediction, i.e. log loss punishes you for being very 
+sure and very wrong
+
+multi-class classification
+- Macro averaged precision: calculate precision for all classes individually 
+and then average them
+- Micro averaged precision: calculate class wise true positive and false 
+positive and then use that to calculate overall precision
+- Weighted precision: same as macro but in this case, it is weighted average 
+depending on the number of items in each class.
