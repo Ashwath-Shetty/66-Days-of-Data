@@ -1,0 +1,7 @@
+1. p@k, ap@k, map@k
+https://stackoverflow.com/questions/55748792/understanding-precisionk-apk-mapk
+
+2. Absolute error, MAE, MSE, RMSE.
+Error = True Value – Predicted Value
+Absolute Error = Abs ( True Value – Predicted Value )
+squared Error = ( True Value – Predicted Value )2
