@@ -1,0 +1,23 @@
+1. RMSE vs RMSLE
+https://medium.com/analytics-vidhya/root-mean-square-log-error-rmse-vs-rmlse-935c6cc1802a
+
+2. mean absolute percentage error or MAPE.
+3. quadratic weighted kappa
+quadratic weighted kappa, also known 
+as QWK. It is also known as Cohen’s kappa. QWK measures the “agreement” 
+between two “ratings”. The ratings can be any real numbers in 0 to N. And 
+predictions are also in the same range. An agreement can be defined as how close 
+these ratings are to each other. So, it’s suitable for a classification problem with N 
+different categories/classes. If the agreement is high, the score is closer towards 1.0. 
+In the case of low agreement, the score is close to 0. Cohen’s kappa has a good 
+implementation in scikit-learn, and detailed discussion of this metric is beyond the 
+scope of this book
+
+4. Matthew’s Correlation Coefficient (MCC). MCC ranges 
+from -1 to 1. 1 is perfect prediction, -1 is imperfect prediction, and 0 is random 
+prediction. The formula for MCC is quite simple.
+ TP * TN - FP * FN
+MCC = ─────────────────────────────────────
+ [ (TP + FP) * (FN + TN) * (FP + TN) * (TP + FN) ] ^ (0.5)
+
+
