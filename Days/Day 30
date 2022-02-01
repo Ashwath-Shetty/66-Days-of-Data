@@ -1,0 +1,17 @@
+Approaching categorical variables from book
+Nominal variables are variables that have two or more categories which do not 
+have any kind of order associated with them. For example, if gender is classified 
+into two groups, i.e. male and female, it can be considered as a nominal variable.
+Ordinal variables, on the other hand, have “levels” or categories with a particular 
+order associated with them. For example, an ordinal categorical variable can be a 
+feature with three different levels: low, medium and high. Order is important.
+As far as definitions are concerned, we can also categorize categorical variables as 
+binary, i.e., a categorical variable with only two categories. Some even talk about 
+a type called “cyclic” for categorical variables. Cyclic variables are present in 
+“cycles” for example, days in a week: Sunday, Monday, Tuesday, Wednesday, 
+Thursday, Friday and Saturday. After Saturday, we have Sunday again. This is a 
+cycle. Another example would be hours in a day if we consider them to be 
+categories
+
+binary vs onehot encoder
+https://stats.stackexchange.com/questions/325263/binary-encoding-vs-one-hot-encoding/325296
