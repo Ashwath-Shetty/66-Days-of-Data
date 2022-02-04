@@ -1,0 +1,28 @@
+while syntax
+WHILE condition
+BEGIN
+   {...statements...}
+END
+DECLARE @Counter INT 
+SET @Counter=1
+WHILE ( @Counter <= 10)
+BEGIN
+    PRINT 'The counter value is = ' + CONVERT(VARCHAR,@Counter)
+    SET @Counter  = @Counter  + 1
+END
+
+https://www.geeksforgeeks.org/print-different-star-patterns-sql/
+pattern printing
+DECLARE @var int               -- Declare
+SELECT @var = 5                -- Initialization
+WHILE @var > 0                 -- condition
+BEGIN                          -- Begin
+PRINT replicate('* ', @var)    -- Print
+SET @var = @var - 1            -- decrement
+END     
+
+* * * * *
+* * * * 
+* * * 
+* * 
+*
