@@ -1,0 +1,5 @@
+from abhishek's book
+- count encoders.
+- rare categories and how to handle them.
+- how to handle nan values and how to treat them as a seperate categorie in the feature.
+- always make sure that your validation set will be as same as test set so that you will not overfitt.
