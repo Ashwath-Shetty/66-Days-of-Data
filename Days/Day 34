@@ -1,0 +1,7 @@
+- target encoder
+  - for target encoder, do target encoding in every fold for train and valid.
+  - if you do encoding for full train and test, before k-fold validation,that will result in overfitting.
+  
+- we can smoothing to regularize/penalize the target encoder otherwise it might overfitt.
+need to study smoothing better.
+https://towardsdatascience.com/what-is-label-smoothing-108debd7ef06
