@@ -1,0 +1,9 @@
+Feature Engineering from abhishek's book:
+- handling time series data and getting features from them.
+- aggregated features generation.
+- tsfresh sklearn library for handling timeseries data.
+- polynomial features generation using sklearn preprocessing.
+- binning for numerical variables.
+- log feature generation-> log(1+feat)
+- missing/nan imputation tricks-> imp-> knnimputer sklearn
+- 
