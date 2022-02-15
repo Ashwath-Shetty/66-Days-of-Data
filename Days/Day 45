@@ -1,0 +1,14 @@
+Sampling
+1. Simple Random Sampling
+- Simple random sampling isn't a reliable sampling method when the sample size is small. 
+   Because sample means vary a lot around the population mean, there's a good chance we'll get an unrepresentative sample.
+- When we do simple random sampling, we should try to get a sample that is as large as possible. 
+  A large sample decreases the variability of the sampling process, which, in turn, decreases the chances that we'll get an unrepresentative sample.
+cons:
+   it's not guaranteed that we'll have a representative sample that has observations for every position we want to analyze.
+
+2. Stratified Sampling
+ - Because simple random sampling is entirely random, it can exclude certain population individuals who are relevant to some of our questions.
+ - To ensure we end up with a sample that has observations for all the categories of interest, we can change the sampling method. 
+   We can organize our data set into different groups and then do simple random sampling for every group. 
+   We can group our data set by player position, and then sample randomly from each group.
