@@ -1,0 +1,32 @@
+dataquest->stats->sampling
+3. cluster sampling.
+slide 10
+- This scenario is quite common in the data science workflow: you want to answer some questions about a population, 
+but the data is scattered in such a way that data collection is either time-consuming or close to impossible. 
+For instance, let's say you want to analyze how people review and rate movies as a function of movie budget. There are many websites that can help with data collection,
+but how can you go about it so that you can spend a day or two on getting the data you need, rather than a month or two?
+
+- One way is to list all the data sources you can find, and then randomly pick only a few of them from which to collect. 
+Then you can individually sample each of the sources you've randomly picked. We call this sampling method cluster sampling, 
+and we call each of the individual data sources a cluster.
+
+chapter 2: dataquest->stats->variables
+The properties with varying values we call variables. The height property in our dataset is an example of a variable. 
+In fact, all the properties described in our dataset are variables.
+2 types of variables:
+
+  1. quantitative variable-> quantity-> age, height etc.-> basically numerical variables
+  2. qualitative variables-> categories-> name, school etc.
+
+Scales of measurement:
+1. Nominal Scale:
+The Team variable is an example of a variable measured on a nominal scale. For any variable measured on a nominal scale:
+We can tell whether two individuals are different or not (with respect to that variable).
+We can't say anything about the direction and the size of the difference.
+We know that it can only describe qualities.
+2. Ordinal Scale:
+Generally, for any variable measured on an ordinal scale, we can tell whether individuals are different or not, we can also tell the direction of the difference, 
+but we still can't determine the size of the difference.
+
+
+  
