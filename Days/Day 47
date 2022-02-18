@@ -1,0 +1,7 @@
+dataquest-> stats-> frequency distributions.
+  - freq dist is just value counts.
+  - Because proportions and percentages are relative to the total number of instances in some set of data, they are called relative frequencies. 
+  In contrast, the frequencies we've been working with so far are called absolute frequencies because they are absolute counts and don't relate to the total number of instances.
+  
+  
+
