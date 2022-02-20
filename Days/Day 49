@@ -1,0 +1,19 @@
+dataquest-> stats -> comparing frequency distribution
+1. grouped bar chart
+sns.countplot(x = 'column_name_1', hue = 'column_name_2',             data = some_dataframe
+
+2. Series_1.plot.hist(histtype = 'step')Series_2.plot.hist(histtype = 'step
+
+3. Generating kernel density plots for two Series objects: 
+   Series_1.plot.kde()
+   Series_2.plot.kde
+   
+4. Generating strip plots:
+sns.stripplot(x = 'column_name_1', y = 'column_name_2', data = some_dataframe)
+
+5. 
+sns.boxplot(x = 'column_name_1', y = 'column_name_2',data = some_dataframe)
+
+seaborn tutorial on grouped bar plots, strip plots, box plots, and more. -> https://seaborn.pydata.org/tutorial/categorical.html
+on kernel density plots, histograms, and more ->  https://seaborn.pydata.org/tutorial/distributions.html
+
