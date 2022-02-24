@@ -1,0 +1,11 @@
+We saw that the mean can be intuitively understood as the "balance point" of a distribution.
+We learned to distinguish conceptually between the sample and the population mean, and we saw that we use different notation for each case.
+We demonstrated with a few examples that the sample mean 
+¯
+x
+ is an unbiased estimator for the population mean 
+μ
+.
+
+increase the sample size to get less population and sample mean variablity or less sampling error.
+sampling error=mean(population)-mean(sample)
