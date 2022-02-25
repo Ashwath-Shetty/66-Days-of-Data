@@ -1,0 +1,8 @@
+data quest-> intermediate stats -> mean
+1. mean
+2. weighted mean
+3. median
+4. when to use mean and median
+- for ordinal go with the median is preferable.
+- outliers affect mean but not median.
+- mean helps to see the change in distribution, a small change will also contribute to the mean since it takes all the values equally important.
