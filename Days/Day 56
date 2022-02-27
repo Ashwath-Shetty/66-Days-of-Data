@@ -1,0 +1,11 @@
+dataquest->intermediate stats-> mode
+unimodal -> one mode
+bimodal -> 2 modes.
+multimodal -> more than 2 modes.
+no mode is also possible -> e.x continuous data -> sales price.
+ -Left-skewed distributions: the mode is on the far right, the median is to the left of themode, and the mean is to the left of the median.
+ - Right-skewed distributions: the mode is on the far left, the median is to the right of themode, and the mean is to the right of the median.
+ - Normal distributions: the mean, the median, and the mode are all in the center of thedistribution
+ - Uniform distributions: the mean and the median are at the center, and there's no mode.
+ - Any symmetrical distribution: the mean and the median are at the center, while theposition of the mode may vary, and there can also be symmetrical distributions havingmore than one mode.
+ 
