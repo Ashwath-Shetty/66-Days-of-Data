@@ -1,0 +1,4 @@
+dataquest-> intermediate stats -> variablity.
+1. range
+range=max(arr)-min(arr)
+drawback: sensitive to outliers. it considers only min and max so, [0,0,0,20] ends up in variabily(range)=20 and it's not representing the variability of the distribution.
