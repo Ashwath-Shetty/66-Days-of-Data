@@ -1,0 +1,6 @@
+dataquest-> intermediate statistics-> measure of variability
+
+ mean absolute deviation = modulus(distance between each point to the mean)/ total number of points.
+ 
+ We call this measure of variability mean absolute distance. In statistical jargon, however, the distance of a value from the mean is called deviation. 
+ So the mean absolute distance is more commonly known as mean absolute deviation or average absolute deviation.
