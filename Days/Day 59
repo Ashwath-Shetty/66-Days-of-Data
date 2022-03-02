@@ -1,0 +1,24 @@
+dataquest -> intermediate stats -> measure of variability
+- mean squared distances / mean squared deviation / variance= sum of squares of distances between the points / total number of points
+- standard deviation=sqrt(variance)
+  - larger the sd more spread the data is.
+  - sqrt( (x-sample_mean)**2/n )
+  where n is the sample size.
+  for population replace n with N and sample mean with pop mean.
+  
+- SD for sampling
+  - ususally sample sd < population sd because it's highly likely that population will have a larger spread and sample will have a smaller spread.
+  - Getting a sample with a higher standard deviation than in the population is possible, but this is less likely. 
+  This is mostly specific to samples with a high spread and no clusters.
+  - inorder to solve the underestimation of samples problem, we decrease the n value by 1 in formula -> n-1
+  sqrt( (x-sample_mean)**2/n-1 )
+  this small correction we have done is called 'bessel's correction'.
+  
+- unbiased estimator - mean, variance if we do sampling with replacement.
+- S.D is not an unbiased estimator.
+
+numy.var() --> https://numpy.org/doc/stable/reference/generated/numpy.var.html
+numpy.std() --> https://numpy.org/doc/stable/reference/generated/numpy.std.html
+series.var() --> https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.var.html
+series.std() --> https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.std.html
+
