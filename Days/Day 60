@@ -1,0 +1,8 @@
+dataquest -> intermediate stats -> z scores
+- Z score is nothing but figuring out a value is how much standard deviation away from the mean of the population / sample.
+- z= (any value x - mean of pop) / SD
+-  z score can be both positive and negative.
+- We can see that a z-score has two parts:
+    - The sign, which indicates whether the value is above or below the mean.
+    - The value, which indicates the number of standard deviations that a value is away from the mean.
+    
