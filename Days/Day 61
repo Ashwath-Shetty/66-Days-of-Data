@@ -1,0 +1,23 @@
+Dataquest -> intermediate stats -> z scores 
+  - A distribution of z-scores is often called a standard distribution (remember that z-scores are also called standard scores). 
+    When we convert a distribution to z-scores, we'd say in statistical jargon that we standardized the distribution.
+  - mean of standard distribution is 0 and standard deviation is 1.
+     basically mean of all the z scores of a distribution = 0
+     standard deviation of all the z scores of a distribution = 1
+  - Standardizing distributions can prove very useful when we need to compare values coming from different systems of measurement
+  - Z-scores may not be always straightforward to work with or communicate to non-technical audiences, but fortunately we can convert them to other values that are more intuitive.
+       x =zσ+μ  -> just altering z formula to get x.
+       you can give σ and μ any value. for e.x: 10 & 10 or 5 & 8 etc. it doesn't matter.
+       
+ summary of z-scores:
+ - A z-score is a number that describes the location of a value within a distribution. 
+     - Non-zero z-scores (+1, -1.5, +2, -2, etc.) consist of two parts:•A sign, which indicates whether the value is above or below the mean.
+     - A value, which indicates the number of standard deviations that a value is away from the mean.
+     - The z-score of the mean is 0.
+     - z =x−μ/σ
+     - We can standardize any distribution by transforming all its values to z-scores. The resultingdistribution will have a mean of 0 and a standard deviation of 1. 
+     Standardized distributions are often called standard distributions.
+     - Standardization is useful for comparing values coming from distributions with different meansand standard deviations.
+     - 
+ 
+     
