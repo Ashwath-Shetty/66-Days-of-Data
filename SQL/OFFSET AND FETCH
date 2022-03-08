@@ -1,0 +1,22 @@
+offset and fetch will be used only with order by
+you can't use fetch without offset.
+
+ORDER BY column_list [ASC |DESC]
+OFFSET offset_row_count {ROW | ROWS}
+FETCH {FIRST | NEXT} fetch_row_count {ROW | ROWS} ONLY
+
+he OFFSET clause is mandatory while the FETCH clause is optional. Also, the FIRST and NEXT are synonyms respectively so you can use them interchangeably. 
+Similarly, you can use the FIRST and NEXT interchangeably.
+
+SELECT
+    product_name,
+    list_price
+FROM
+    production.products
+ORDER BY
+    list_price,
+    product_name 
+OFFSET 10 ROWS 
+FETCH NEXT 10 ROWS ONLY;
+
+https://www.sqlservertutorial.net/sql-server-basics/sql-server-offset-fetch/
