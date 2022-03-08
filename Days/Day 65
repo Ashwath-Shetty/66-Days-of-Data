@@ -1,0 +1,5 @@
+Dataquest -> statistics-> estimating probabilities
+P(H) = 56 heads / 100 tosses = 0.56
+
+however, that 0.56 represents the proportion of heads from the total number of tosses. As we've learned in a previous lesson, we can convert proportions to percentages:
+P(H) = 0.56 = 56%
