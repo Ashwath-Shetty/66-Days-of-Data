@@ -1,0 +1,4 @@
+dataquest-> stats -> probabilities -> estimating probabilities.
+
+Generally, the probability of an event (a coin landing heads up, getting a 5 when we roll a die, etc.) 
+approaches the true probability value as the number of trials of the random experiment (a coin toss, the rolling of a die, etc.) increases without bound.
