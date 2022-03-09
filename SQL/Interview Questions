@@ -1,0 +1,12 @@
+-- 1> Write a SQL query to find the nth highest salary from employee table. 
+-- Example: finding 3rd highest salary from employee table
+-> general -> limit 1, offset n-1
+   limit 1 will fetch one record and offset 2 will skip first 2 records.
+-> select distinct salary from employee limit 1, offset 2
+
+-- 2> Write a SQL query to find top n records?
+-- Example: finding top 5 records from employee table
+-> select * from employee order by salary desc limit 5;
+
+-- 3> Write a SQL query to find the count of employees working in department 'Admin'
+-> select count(*) from employee where department = 'Admin';
