@@ -1,0 +1,6 @@
+all you need -> https://mode.com/sql-tutorial/sql-string-functions-for-cleaning/
+
+-- 5>  Write a query to fetch only the first name(string before space) from the FullName column of user_name table.
+    select distinct(substring_index(full_names, ' ', 1)) first_name from user_name;
+    SUBSTRING_INDEX(string, delimiter, number)
+    
