@@ -1,3 +1,25 @@
 https://towardsdatascience.com/a-guide-to-advanced-sql-window-functions-f63f2642cbf9
 cheet sheet->https://learnsql.com/blog/sql-window-functions-cheat-sheet/
 https://www.hackerrank.com/challenges/sql-projects/problem?isFullScreen=true
+
+multiple ctes in a query:
+
+WITH Country_Medals AS (
+  SELECT
+    Year, Country, COUNT(*) AS Medals
+  FROM Summer_Medals
+  WHERE
+    Country IN ('CHN', 'KOR', 'JPN')
+    AND Medal = 'Gold' AND Year >= 2000
+  GROUP BY Year, Country),
+ab as
+(SELECT
+  -- Return the max medals earned so far per country
+  Year,
+  Country,
+  Medals,
+  max(medals) OVER (PARTITION BY Country
+                ORDER BY Year ASC) AS Max_Medals
+FROM Country_Medals
+ORDER BY Country ASC, Year ASC)
+select * from ab;
